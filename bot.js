@@ -9,7 +9,6 @@ const Client = new Discord.Client()
 const {
     validate,
     ping,
-    filter
 } = require("./helperFunctions")
 
 // Import the required modules for the game

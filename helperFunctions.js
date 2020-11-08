@@ -47,5 +47,4 @@ const validate = (message, commands) => {
 module.exports = {
     validate,
     ping,
-    filter
 }
