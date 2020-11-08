@@ -2,13 +2,14 @@
 require('dotenv').config()
 
 const Discord = require('discord.js')
-const client = new Discord.Client()
+const Client = new Discord.Client()
 
 // Imports the helper functions from 
 // the module ./helperFunctions.js
 const {
     validate,
-    ping
+    ping,
+    filter
 } = require("./helperFunctions")
 
 // Import the required modules for the game
@@ -23,13 +24,15 @@ let Player = null
 // Get the BOT_TOKEN from process.env (handled by the `dotenv` package)
 const BOT_TOKEN = process.env.BOT_TOKEN
 
+const reactionOptions = { min: 2, max: 2, time: 10000 }
+
 // On successful login
-client.on('ready', () => {
-    console.log(`Logged in as: ${client.user.tag}!`)
+Client.on('ready', () => {
+    console.log(`Logged in as: ${Client.user.tag}!`)
 });
 
 // On message
-client.on('message', message => {
+Client.on('message', async message => {
     // Test command
     if (validate(message, "ping"))
         ping(message);
@@ -37,12 +40,29 @@ client.on('message', message => {
     // Starts the game
     // Valid inputs: .kezd, .kezdes
     else if (validate(message, ["kezdes", "kezd"])) {
-        let Player = new PlayerClass(message.author.tag)
-        Game.beginGame(Player)
+        Player = new PlayerClass(message.author.tag)
 
-        message.reply(`A játék elkezdődött!`);
+        let botReply = await message.reply(`Kattints a ✅ reakciógombra a kezdésért!!`)
+        await botReply.react("✅")
     }
 });
 
+Client.on("messageReactionAdd", (reaction, user) => {
+    const message = reaction.message
+
+    if (Client.user.tag == user.tag)
+        return
+
+    if (Game.status == "stopped" && reaction.emoji.name == "✅") {
+        console.log(reaction.emoji.name)
+        message.channel.send("KEZDŐDIK!")
+        Game.beginGame(Player)
+
+        return
+    }
+
+    console.log("Already running!")
+})
+
 // Login
-client.login(`${BOT_TOKEN}`)
+Client.login(`${BOT_TOKEN}`)

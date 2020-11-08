@@ -10,6 +10,7 @@ class GameClass {
         this.correctAnswers = 0
         this.wrongAnswers = 0
         this.points = 0
+        this.status = "stopped"
 
     }
 
@@ -17,6 +18,7 @@ class GameClass {
     beginGame = (player) => {
         // Assign a new player to the game
         this.player = player
+        this.status = "running"
         console.log(`PlayerID: ${this.player.id}`);
     }
 }
