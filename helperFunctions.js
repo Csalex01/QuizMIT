@@ -42,10 +42,6 @@ const validate = (message, commands) => {
     return false
 }
 
-// Filter function for awaitReactions()
-const filter = (reaction) => {
-    return reaction.emoji.name === '✅'
-};
 
 // Exports the functions as a module
 module.exports = {
