@@ -10,12 +10,13 @@ class GameClass {
         this.correctAnswers = 0
         this.wrongAnswers = 0
         this.points = 0
+
     }
 
     // Member function
-    beginGame = (playerId) => {
+    beginGame = (player) => {
         // Assign a new player to the game
-        this.player = new PlayerClass(playerId);
+        this.player = player
         console.log(`PlayerID: ${this.player.id}`);
     }
 }

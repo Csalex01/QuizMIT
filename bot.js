@@ -13,12 +13,12 @@ const {
 
 // Import the required modules for the game
 // (PlayerClass, GameClass);
-const PlayerClass = require("./player")
-const GameClass = require("./game")
+const PlayerClass = require("./Classes/player")
+const GameClass = require("./Classes/game")
 
-// Initialize variables required for the game
+// Initialize the Game object
 let Game = new GameClass()
-let Player = new PlayerClass()
+let Player = null
 
 // Get the BOT_TOKEN from process.env (handled by the `dotenv` package)
 const BOT_TOKEN = process.env.BOT_TOKEN
@@ -37,9 +37,10 @@ client.on('message', message => {
     // Starts the game
     // Valid inputs: .kezd, .kezdes
     else if (validate(message, ["kezdes", "kezd"])) {
-        message.reply("A játék elkezdődött!");
+        let Player = new PlayerClass(message.author.tag)
+        Game.beginGame(Player)
 
-        Game.beginGame(message.author.tag)
+        message.reply(`A játék elkezdődött!`);
     }
 });
 
