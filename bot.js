@@ -46,12 +46,16 @@ Client.on('message', async message => {
     }
 });
 
+// When a user reacts to a message, this gets called
 Client.on("messageReactionAdd", (reaction, user) => {
+    // gets the message based on the reaction
     const message = reaction.message
 
+    // If the bot reacted (added a reaction to the list), skip
     if (Client.user.tag == user.tag)
         return
 
+    // Else if the game state is stopped and the user is ready, start the game
     if (Game.status == "stopped" && reaction.emoji.name == "✅") {
         console.log(reaction.emoji.name)
         message.channel.send("KEZDŐDIK!")
@@ -60,6 +64,7 @@ Client.on("messageReactionAdd", (reaction, user) => {
         return
     }
 
+    // When the game is running
     console.log("Already running!")
 })
 
