@@ -23,6 +23,9 @@ let Player = null
 // Get the BOT_TOKEN from process.env (handled by the `dotenv` package)
 const BOT_TOKEN = process.env.BOT_TOKEN
 
+// Authenticate the bot
+Client.login(`${BOT_TOKEN}`)
+
 // On successful login
 Client.on('ready', () => {
     // Debug message (DO NOT REMOVE)
@@ -69,8 +72,7 @@ Client.on('message', async message => {
 
 // When a user reacts to a message, this gets called
 // Note: This function is asyncronous because it needs to make calls
-//       to the Discord API. It takes time to recieve the response
-//       (as a Promise).
+//       to the Discord API and recieves a Promise as response.
 Client.on("messageReactionAdd", async (reaction, user) => {
     // gets the message based on the reaction
     const message = reaction.message
@@ -84,10 +86,10 @@ Client.on("messageReactionAdd", async (reaction, user) => {
         console.log(reaction.emoji.name)
         // "await" stops the code from execeution until promise is received
         await message.channel.send("A játék elkezdődött! A következő parancsal tudsz kilépni: `.kilep`🕹")
-        // message.channel.send("1. Kérdés ❓")
 
         // Let the game begin!
         Game.beginGame(Player)
+
         // Player is a pointer to Game.player
         Player = Game.player
     }
@@ -148,6 +150,3 @@ Client.on("messageReactionAdd", async (reaction, user) => {
         Game.reset()
     }
 })
-
-// Login
-Client.login(`${BOT_TOKEN}`)
