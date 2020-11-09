@@ -11,3 +11,6 @@
 - Stylistic changes
 - Deploy bot to cloud (mainly AWS)
     - Alternative: Run bot on Raspberry Pi
+
+- Create a short video on the project (possibly narrated)
+- Submit the project
