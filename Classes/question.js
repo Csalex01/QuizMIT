@@ -19,4 +19,5 @@ class Question {
     }
 }
 
+// Export the Question class as a module
 module.exports = Question

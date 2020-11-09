@@ -5,6 +5,7 @@ class PlayerClass {
     constructor(userId) {
         // User id (unique for each player)
         this.id = userId
+
         // Score counting
         this.correctAnswers = 0
         this.wrongAnswers = 0
@@ -12,4 +13,5 @@ class PlayerClass {
     }
 }
 
+// Export the PlayerClass as a module
 module.exports = PlayerClass

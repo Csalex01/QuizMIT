@@ -112,7 +112,6 @@ Client.on("messageReactionAdd", async (reaction, user) => {
         Game.nextQuestion()
     }
 
-
     // While (if) the current game is running (+ off by 1 error correction)
     if (Game.currentQuestionNumber <= Game.questionCount - 1) {
         // Create a MessageEmbed object as response

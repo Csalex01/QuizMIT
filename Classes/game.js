@@ -75,4 +75,5 @@ class GameClass {
     }
 }
 
+// Export the GameClass as a module
 module.exports = GameClass
