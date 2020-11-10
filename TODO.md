@@ -2,6 +2,7 @@
 (Priority order)
 
 - Expand the question list (max 10)
+    - Done: 5 questions
 - Improve logic
 - Update README.md
     - Introduction to the project
