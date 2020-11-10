@@ -7,11 +7,6 @@ const ping = (message) => {
     message.reply("🏓 Pong!")
 }
 
-// Gets the arguments of a command
-const getArgs = (message, command) => {
-    return message.content.replace(`${PREFIX}${command} `, "")
-}
-
 // Command validation
 const validate = (message, commands) => {
 
@@ -26,8 +21,6 @@ const validate = (message, commands) => {
             console.log(`Executed by ${message.author.tag}`)
             // Which command has been executed
             console.log(`Current command: ${PREFIX}${cmd}`)
-            // The arguments of a given command
-            console.log(`Argument(s): ${getArgs(message, cmd)}`)
             // The current timestamp
             console.log(`Timestamp: ${Date.now()}`)
 
