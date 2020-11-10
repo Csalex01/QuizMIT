@@ -5,8 +5,7 @@ const Question = require("./question")
 // Required for file management
 const fs = require("fs")
 
-// Initialize the questions
-// FIX: Get data from database/JSON file
+// Declare the variables required for the questions
 let questions
 let JSONdata
 
@@ -23,7 +22,7 @@ class GameClass {
         this.currentQuestionNumber = 0
         this.acceptedAnswers = ["0️⃣", "1️⃣", "2️⃣", "3️⃣"]
 
-        // OPen JSON file
+        // Open JSON file
         JSONdata = fs.readFileSync("questions.json")
         // Parse JSONdata
         questions = JSON.parse(JSONdata).questions

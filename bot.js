@@ -67,9 +67,6 @@ Client.on('message', async message => {
             message.channel.send("A játék nincs elkedzve! ❌")
         }
     }
-
-    // DEBUG MESSAGE (REMOVE LATER)
-    // console.log(Game.status)
 });
 
 // When a user reacts to a message, this gets called
@@ -85,7 +82,9 @@ Client.on("messageReactionAdd", async (reaction, user) => {
 
     // Else if the game state is stopped and the user is ready, start the game
     if (Game.status == "stopped" && reaction.emoji.name == "✅") {
+        // DEBUG MESSAGE (REMOVE LATER)
         console.log(reaction.emoji.name)
+
         // "await" stops the code from execeution until promise is received
         await message.channel.send("A játék elkezdődött! A következő parancsal tudsz kilépni: `.kilep`🕹")
 
@@ -95,9 +94,6 @@ Client.on("messageReactionAdd", async (reaction, user) => {
         // Player is a pointer to Game.player
         Player = Game.player
     }
-
-    // DEBUG MESSAGE (REMOVE LATER)
-    console.log(reaction.emoji.name, Game.currentQuestion.correctAnswer)
 
     // If there is an incoming answer
     // FIX: Make this not emoji-oriented!
