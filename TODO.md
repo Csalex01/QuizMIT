@@ -9,7 +9,7 @@
     - How to install
     - How to add bot to server
 - Stylistic changes
-- Deploy bot to cloud (mainly AWS)
+- Deploy bot to cloud (Preferred: Heroku/AWS)
     - Alternative: Run bot on Raspberry Pi
 
 - Create a short video on the project (possibly narrated)
