@@ -1,26 +1,12 @@
-// Import neccessary modules (Player)
+// Import neccessary modules
 const Question = require("./question")
+// Required for file management
+const fs = require("fs")
 
 // Initialize the questions
 // FIX: Get data from database/JSON file
-let questions = [
-    {
-        question: "This is a placeholder text to test how long Discord is capable of writing text in an embed message without line wrapping",
-        answer1: "TV1",
-        answer2: "TV2",
-        answer3: "TV3",
-        answer4: "TV4",
-        correctAnswer: 0
-    },
-    {
-        question: "Teszt kérdés!",
-        answer1: "Teszt válasz 1",
-        answer2: "Teszt válasz 2",
-        answer3: "Teszt válasz 3",
-        answer4: "Teszt válasz 4",
-        correctAnswer: 1
-    }
-]
+let questions
+let JSONdata
 
 // Create the game class
 class GameClass {
@@ -30,11 +16,15 @@ class GameClass {
         this.player = null
         this.status = "stopped"
         this.questions = []
-        this.questionCount = 2
+        this.questionCount = 5
         this.currentQuestion = null
         this.currentQuestionNumber = 0
         this.acceptedAnswers = ["0️⃣", "1️⃣", "2️⃣", "3️⃣"]
 
+        // OPen JSON file
+        JSONdata = fs.readFileSync("questions.json")
+        // Parse JSONdata
+        questions = JSON.parse(JSONdata).questions
     }
 
     // Member function
@@ -72,6 +62,7 @@ class GameClass {
         this.player.wrongAnswers = 0
         this.player.score = 0
         this.status = "stopped"
+        this.currentQuestionNumber = 0
     }
 }
 

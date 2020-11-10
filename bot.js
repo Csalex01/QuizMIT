@@ -135,10 +135,8 @@ Client.on("messageReactionAdd", async (reaction, user) => {
         let botReply = await message.channel.send(embed)
 
         // Add reactions to the embed message
-        await botReply.react("0️⃣")
-        await botReply.react("1️⃣")
-        await botReply.react("2️⃣")
-        await botReply.react("3️⃣")
+        for (let reaction of Game.acceptedAnswers)
+            await botReply.react(reaction)
 
         // DEBUG LOG
         console.log(Game.currentQuestion.correctAnswer)

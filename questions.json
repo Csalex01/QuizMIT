@@ -1,0 +1,53 @@
+{
+    "questions": [
+        {
+            "question": "This is a placeholder text to test how long Discord is capable of writing text in an embed message without line wrapping",
+            "answer1": "TV1",
+            "answer2": "TV2",
+            "answer3": "TV3",
+            "answer4": "TV4",
+            "correctAnswer": 0
+        },
+        {
+            "question": "Teszt kérdés!",
+            "answer1": "Teszt válasz 1",
+            "answer2": "Teszt válasz 2",
+            "answer3": "Teszt válasz 3",
+            "answer4": "Teszt válasz 4",
+            "correctAnswer": 1
+        },
+        {
+            "question": "Teszt kérdés! #2",
+            "answer1": "Teszt válasz 1#2",
+            "answer2": "Teszt válasz 2#2",
+            "answer3": "Teszt válasz 3#2",
+            "answer4": "Teszt válasz 4#2",
+            "correctAnswer": 2
+        },
+        {
+            "question": "Teszt kérdés! #3",
+            "answer1": "Teszt válasz 1#3",
+            "answer2": "Teszt válasz 2#3",
+            "answer3": "Teszt válasz 3#3",
+            "answer4": "Teszt válasz 4#3",
+            "correctAnswer": 3
+        },
+        {
+            "question": "Teszt kérdés! #4",
+            "answer1": "Teszt válasz 1#4",
+            "answer2": "Teszt válasz 2#4",
+            "answer3": "Teszt válasz 3#4",
+            "answer4": "Teszt válasz 4#4",
+            "correctAnswer": 2
+        }
+        ,
+        {
+            "question": "Teszt kérdés! #5",
+            "answer1": "Teszt válasz 1#5",
+            "answer2": "Teszt válasz 2#5",
+            "answer3": "Teszt válasz 3#5",
+            "answer4": "Teszt válasz 4#5",
+            "correctAnswer": 1
+        }
+    ]
+}
