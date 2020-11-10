@@ -6,9 +6,7 @@ class Question {
     // Class constructor
     // Parameters:
     // 1. The number of the question (number)
-    // 2. The actual question (question)
-    // 3. The answers for the question (answer1, answer2, answer3, answer4)
-    // 4. The correct answer (correctAnswer)
+    // 2. The actual question (question extends QuestionClass)
     constructor(number, questionObject) {
         this.number = null || number
         this.question = null || questionObject.question

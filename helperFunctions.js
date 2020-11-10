@@ -1,6 +1,5 @@
 // Importing the required packages
 const PREFIX = process.env.PREFIX
-// const Discord = require("discord.js")
 
 // Test command
 const ping = (message) => {
@@ -23,7 +22,6 @@ const validate = (message, commands) => {
             console.log(`Current command: ${PREFIX}${cmd}`)
             // The current timestamp
             console.log(`Timestamp: ${Date.now()}`)
-
             console.log("-----")
 
             // Return true, successful validation
