@@ -10,7 +10,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "run": "nodemon bot.js"
   },
   "author": "Csillag Alex @SapientiaEMTE",
