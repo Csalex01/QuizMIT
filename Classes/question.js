@@ -1,3 +1,4 @@
+'use strict';
 
 // Question class definition
 class Question {

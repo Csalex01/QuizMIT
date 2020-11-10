@@ -1,3 +1,5 @@
+'use strict';
+
 // Importing the required packages
 require('dotenv').config()
 

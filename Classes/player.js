@@ -1,3 +1,4 @@
+'use strict';
 
 // PlayerClass definition
 class PlayerClass {

@@ -1,3 +1,5 @@
+'use strict';
+
 // Import neccessary modules
 const Question = require("./question")
 // Required for file management
