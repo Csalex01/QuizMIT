@@ -1,5 +1,5 @@
 ## TODO
-(In priority order)
+(Priority order)
 
 - Expand the question list (max 10)
 - Improve logic
