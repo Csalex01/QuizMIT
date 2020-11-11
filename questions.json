@@ -1,53 +1,94 @@
 {
     "questions": [
         {
-            "question": "This is a placeholder text to test how long Discord is capable of writing text in an embed message without line wrapping",
-            "answer1": "TV1",
-            "answer2": "TV2",
-            "answer3": "TV3",
-            "answer4": "TV4",
-            "correctAnswer": 0
+            "question": "Hány szak található a Sapientia EMTE Marosvásárhelyi karán❓",
+            "answer0": "Tíz",
+            "answer1": "Tizenegy",
+            "answer2": "Tizenkettő",
+            "answer3": "Tizenhárom",
+            "correctAnswer": 3,
+            "imgURL": "https://yt3.ggpht.com/a/AATXAJz8RwwKeDgdWJ8KffVZE6gmq1irh97lK7-mUDE6=s900-c-k-c0x00ffffff-no-rj"
         },
         {
-            "question": "Teszt kérdés!",
-            "answer1": "Teszt válasz 1",
-            "answer2": "Teszt válasz 2",
-            "answer3": "Teszt válasz 3",
-            "answer4": "Teszt válasz 4",
-            "correctAnswer": 1
+            "question": "Minek a rövidítése a NASA (NRŰH)❓",
+            "answer0": "National Aeronautics and Space Administration 🚀",
+            "answer1": "National Aerodynamics and Sea Administration 🌊",
+            "answer2": "National Association of Space Administration 🌟",
+            "answer3": "National Alien Society Administration 🛸",
+            "correctAnswer": 1,
+            "imgURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/918px-NASA_logo.svg.png"
+        },
+        {
+            "question": "Ki Elon Reeve Musk❓",
+            "answer0": "Egy muskétás 🔫",
+            "answer1": "SpaceX, Tesla, PayPal és egyéb cégek fővezetője 🚀",
+            "answer2": "Angol tanár a Sapientián 🎓",
+            "answer3": "REEEEEEEEEEEEEEE 📢",
+            "correctAnswer": 1,
+            "imgURL": "https://d3g9pb5nvr3u7.cloudfront.net/authors/539a28913f3c0fd71ed4e43d/2131300937/256.jpg"
         },
         {
             "question": "Teszt kérdés! #2",
-            "answer1": "Teszt válasz 1#2",
-            "answer2": "Teszt válasz 2#2",
-            "answer3": "Teszt válasz 3#2",
-            "answer4": "Teszt válasz 4#2",
-            "correctAnswer": 2
-        },
-        {
-            "question": "Teszt kérdés! #3",
-            "answer1": "Teszt válasz 1#3",
-            "answer2": "Teszt válasz 2#3",
-            "answer3": "Teszt válasz 3#3",
-            "answer4": "Teszt válasz 4#3",
-            "correctAnswer": 3
+            "answer0": "Teszt válasz 1#2",
+            "answer1": "Teszt válasz 2#2",
+            "answer2": "Teszt válasz 3#2",
+            "answer3": "Teszt válasz 4#2",
+            "correctAnswer": 0,
+            "imgURL": ""
         },
         {
             "question": "Teszt kérdés! #4",
-            "answer1": "Teszt válasz 1#4",
-            "answer2": "Teszt válasz 2#4",
-            "answer3": "Teszt válasz 3#4",
-            "answer4": "Teszt válasz 4#4",
-            "correctAnswer": 2
-        }
-        ,
+            "answer0": "Teszt válasz 1#4",
+            "answer1": "Teszt válasz 2#4",
+            "answer2": "Teszt válasz 3#4",
+            "answer3": "Teszt válasz 4#4",
+            "correctAnswer": 0,
+            "imgURL": ""
+        },
         {
             "question": "Teszt kérdés! #5",
-            "answer1": "Teszt válasz 1#5",
-            "answer2": "Teszt válasz 2#5",
-            "answer3": "Teszt válasz 3#5",
-            "answer4": "Teszt válasz 4#5",
-            "correctAnswer": 1
+            "answer0": "Teszt válasz 1#5",
+            "answer1": "Teszt válasz 2#5",
+            "answer2": "Teszt válasz 3#5",
+            "answer3": "Teszt válasz 4#5",
+            "correctAnswer": 0,
+            "imgURL": ""
+        },
+        {
+            "question": "Teszt kérdés! #6",
+            "answer0": "Teszt válasz 1#6",
+            "answer1": "Teszt válasz 2#6",
+            "answer2": "Teszt válasz 3#6",
+            "answer3": "Teszt válasz 4#6",
+            "correctAnswer": 0,
+            "imgURL": ""
+        },
+        {
+            "question": "Teszt kérdés! #7",
+            "answer0": "Teszt válasz 1#7",
+            "answer1": "Teszt válasz 2#7",
+            "answer2": "Teszt válasz 3#7",
+            "answer3": "Teszt válasz 4#7",
+            "correctAnswer": 0,
+            "imgURL": ""
+        },
+        {
+            "question": "Teszt kérdés! #8",
+            "answer0": "Teszt válasz 1#8",
+            "answer1": "Teszt válasz 2#8",
+            "answer2": "Teszt válasz 3#8",
+            "answer3": "Teszt válasz 4#8",
+            "correctAnswer": 0,
+            "imgURL": ""
+        },
+        {
+            "question": "Teszt kérdés! #9",
+            "answer0": "Teszt válasz 1#9",
+            "answer1": "Teszt válasz 2#9",
+            "answer2": "Teszt válasz 3#9",
+            "answer3": "Teszt válasz 4#9",
+            "correctAnswer": 0,
+            "imgURL": ""
         }
     ]
 }

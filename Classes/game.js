@@ -17,7 +17,7 @@ class GameClass {
         this.player = null
         this.status = "stopped"
         this.questions = []
-        this.questionCount = 5
+        this.questionCount = 0
         this.currentQuestion = null
         this.currentQuestionNumber = 0
         this.acceptedAnswers = ["0️⃣", "1️⃣", "2️⃣", "3️⃣"]
@@ -32,6 +32,8 @@ class GameClass {
     beginGame = (player) => {
         // Assign a new player to the game
         this.player = player
+
+        this.questionCount = questions.length
         this.status = "running"
 
         // Create 'questionCount' number of questions
@@ -42,6 +44,7 @@ class GameClass {
 
         // Set the current question to the first question in the stack
         this.currentQuestion = this.questions[this.currentQuestionNumber]
+        console.log(this.currentQuestion)
 
         // DEBUG MESSAGE (REMOVE LATER)
         console.log(`PlayerID: ${this.player.id}`);

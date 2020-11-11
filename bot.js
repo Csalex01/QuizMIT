@@ -119,15 +119,15 @@ Client.on("messageReactionAdd", async (reaction, user) => {
         let embedContent = ``
 
         // Set the properties of the embed message
-        embed.setTitle(`${Game.currentQuestionNumber}. Kérdés: ${Game.currentQuestion.question} ❓`)
+        embed.setTitle(`${Game.currentQuestionNumber}. ${Game.currentQuestion.question}`)
         embedContent += `Eddigi pontszámod: ${Player.correctAnswers}/${Game.questionCount}\n\n`
-        embedContent += `0️⃣ ${Game.currentQuestion.answer1}\n`
-        embedContent += `1️⃣ ${Game.currentQuestion.answer2}\n`
-        embedContent += `2️⃣ ${Game.currentQuestion.answer3}\n`
-        embedContent += `3️⃣ ${Game.currentQuestion.answer4}\n`
+        embedContent += `0️⃣ ${Game.currentQuestion.answer0}\n`
+        embedContent += `1️⃣ ${Game.currentQuestion.answer1}\n`
+        embedContent += `2️⃣ ${Game.currentQuestion.answer2}\n`
+        embedContent += `3️⃣ ${Game.currentQuestion.answer3}\n`
         embed.setColor("GREEN")
         embed.setDescription(embedContent)
-        embed.setThumbnail(Client.user.displayAvatarURL())
+        embed.setThumbnail(Game.currentQuestion.imgURL)
 
         // Send the embed message
         let botReply = await message.channel.send(embed)
