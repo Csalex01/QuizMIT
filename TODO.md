@@ -12,6 +12,8 @@
 
 - Improve logic
 
+- Add assist feature
+
 - Update README.md
     - Introduction to the project
     - Usage
