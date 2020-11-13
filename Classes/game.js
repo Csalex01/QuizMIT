@@ -51,17 +51,17 @@ class GameClass {
         console.log(`PlayerID: ${this.player.id}`);
     }
 
+    // This member function will process the question response
     handleQuestion = async (message, reaction) => {
         // If there is an incoming answer
         // FIX: Make this not emoji-oriented!
         if (this.acceptedAnswers.includes(reaction.emoji.name)) {
-            if (reaction.emoji.name == "0️⃣" && this.currentQuestion.correctAnswer == 0)
-                this.player.correctAnswers += 1
-            else if (reaction.emoji.name == "1️⃣" && this.currentQuestion.correctAnswer == 1)
-                this.player.correctAnswers += 1
-            else if (reaction.emoji.name == "2️⃣" && this.currentQuestion.correctAnswer == 2)
-                this.player.correctAnswers += 1
-            else if (reaction.emoji.name == "3️⃣" && this.currentQuestion.correctAnswer == 3)
+            if (
+                reaction.emoji.name == "0️⃣" && this.currentQuestion.correctAnswer == 0 ||
+                reaction.emoji.name == "1️⃣" && this.currentQuestion.correctAnswer == 1 ||
+                reaction.emoji.name == "2️⃣" && this.currentQuestion.correctAnswer == 2 ||
+                reaction.emoji.name == "3️⃣" && this.currentQuestion.correctAnswer == 3
+            )
                 this.player.correctAnswers += 1
             else
                 console.log("WRONG ANSWER!")
@@ -77,7 +77,7 @@ class GameClass {
 
             // Set the properties of the embed message
             embed.setTitle(`${this.currentQuestionNumber}. ${this.currentQuestion.question}`)
-            embedContent += `Eddigi pontszámod: ${this.player.correctAnswers}/${this.questionCount}\n\n`
+            embedContent += `ℹ Jelenlegi pontszámod: ${this.player.correctAnswers}/${this.questionCount}\n\n`
             embedContent += `0️⃣ ${this.currentQuestion.answer0}\n`
             embedContent += `1️⃣ ${this.currentQuestion.answer1}\n`
             embedContent += `2️⃣ ${this.currentQuestion.answer2}\n`
@@ -86,6 +86,14 @@ class GameClass {
             embed.setDescription(embedContent)
             embed.setThumbnail(this.currentQuestion.imgURL)
 
+            if (this.currentQuestionNumber == 0) {
+                await message.channel.send("Jőjjön egy egyszerű kérdés kezdésként! 🔰");
+            } else if (this.currentQuestionNumber == 1) {
+                await message.channel.send("Bemelegítés vége. Kezdődnek a általános kérdések az űrkutatással kapcsolatban! 👽")
+            } else if (this.currentQuestionNumber % 3 == 0) {
+                await message.channel.send("Eddig jól haladsz, csak így tovább! 🤗")
+            }
+
             // Send the embed message
             let botReply = await message.channel.send(embed)
 
@@ -93,8 +101,6 @@ class GameClass {
             for (let reaction of this.acceptedAnswers)
                 await botReply.react(reaction)
 
-            // DEBUG LOG
-            console.log(this.currentQuestion.correctAnswer)
         } else {
             // If the game is over
             // DEBUG MESSAGE (REMOVE LATER)

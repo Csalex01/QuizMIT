@@ -97,6 +97,7 @@ Client.on("messageReactionAdd", async (reaction, user) => {
 
     }
 
+    // Handle the response and disply next question
     Game.handleQuestion(message, reaction)
 
     // // If there is an incoming answer

@@ -1,7 +1,7 @@
 {
     "questions": [
         {
-            "question": "Hány szak található a Sapientia EMTE Marosvásárhelyi karán❓",
+            "question": "Hány alapképzés található a Sapientia EMTE Marosvásárhelyi karán ❓",
             "answer0": "Tíz",
             "answer1": "Tizenegy",
             "answer2": "Tizenkettő",
@@ -10,7 +10,7 @@
             "imgURL": "https://yt3.ggpht.com/a/AATXAJz8RwwKeDgdWJ8KffVZE6gmq1irh97lK7-mUDE6=s900-c-k-c0x00ffffff-no-rj"
         },
         {
-            "question": "Minek a rövidítése a NASA❓",
+            "question": "Mit rövidít a NASA❓",
             "answer0": "National Aeronautics and Space Administration 🚀",
             "answer1": "National Aerodynamics and Sea Administration 🌊",
             "answer2": "National Association of Space Administration 🌟",
@@ -19,7 +19,7 @@
             "imgURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/918px-NASA_logo.svg.png"
         },
         {
-            "question": "Ki Elon Reeve Musk❓",
+            "question": "Ki Elon Reeve Musk ❓",
             "answer0": "Egy muskétás 🔫",
             "answer1": "SpaceX, Tesla, PayPal és egyéb cégek fővezetője 🚀",
             "answer2": "Angol tanár a Sapientián 🎓",
@@ -28,7 +28,7 @@
             "imgURL": "https://d3g9pb5nvr3u7.cloudfront.net/authors/539a28913f3c0fd71ed4e43d/2131300937/256.jpg"
         },
         {
-            "question": "Mikor tette közzé az Event Horizon Telescope az első képet a Messier 87 galaxis belsejében található fekete lyukról❓",
+            "question": "Mikor tette közzé az Event Horizon Telescope az első képet a Messier 87 galaxis belsejében található fekete lyukról ❓",
             "answer0": "2019 Április 10 🌟",
             "answer1": "2019 Május 10 🌌",
             "answer2": "2020 Április 5 🎇",
@@ -37,16 +37,16 @@
             "imgURL": "https://www.nasa.gov/sites/default/files/thumbnails/image/blackhole.png"
         },
         {
-            "question": "Teszt kérdés! #4",
-            "answer0": "Teszt válasz 1#4",
-            "answer1": "Teszt válasz 2#4",
-            "answer2": "Teszt válasz 3#4",
-            "answer3": "Teszt válasz 4#4",
-            "correctAnswer": 0,
-            "imgURL": ""
+            "question": "Miért alapult meg a SpaceX cég ❓",
+            "answer0": "Elon Musk egyik álma volt 💤",
+            "answer1": "A NASA költségvetését szerette volna megnövelni 💲",
+            "answer2": "Versengés a NASA-val 🏁",
+            "answer3": "Az Űrverseny megnyerése 🚀",
+            "correctAnswer": 1,
+            "imgURL": "https://www.itvoice.in/wp-content/uploads/2020/06/spacex-361.jpg"
         },
         {
-            "question": "Teszt kérdés! #5",
+            "question": "",
             "answer0": "Teszt válasz 1#5",
             "answer1": "Teszt válasz 2#5",
             "answer2": "Teszt válasz 3#5",
