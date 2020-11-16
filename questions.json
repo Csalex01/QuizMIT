@@ -46,22 +46,22 @@
             "imgURL": "https://www.itvoice.in/wp-content/uploads/2020/06/spacex-361.jpg"
         },
         {
-            "question": "Teszt kérdés! #5",
-            "answer0": "Teszt válasz 1#5",
-            "answer1": "Teszt válasz 2#5",
-            "answer2": "Teszt válasz 3#5",
-            "answer3": "Teszt válasz 4#5",
-            "correctAnswer": 0,
-            "imgURL": ""
+            "question": "A NASA és SpaceX hány hónapos küldetésre jelölte ki a Crew-1 legénységet ❓",
+            "answer0": "2 hónap 🕑",
+            "answer1": "4 hónap 🕓",
+            "answer2": "6 hónap 🕕",
+            "answer3": "5 hónap 🕔",
+            "correctAnswer": 2,
+            "imgURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/SpaceX_Crew-1_logo.svg/175px-SpaceX_Crew-1_logo.svg.png"
         },
         {
-            "question": "Teszt kérdés! #6",
-            "answer0": "Teszt válasz 1#6",
-            "answer1": "Teszt válasz 2#6",
-            "answer2": "Teszt válasz 3#6",
-            "answer3": "Teszt válasz 4#6",
+            "question": "A SpaceX Starlink műholdjainak mekkora a tömege ❓",
+            "answer0": "260kg 🤔",
+            "answer1": "320kg 👽",
+            "answer2": "420kg 🚬",
+            "answer3": "69kg  👌",
             "correctAnswer": 0,
-            "imgURL": ""
+            "imgURL": "https://download.logo.wine/logo/Starlink_(satellite_constellation)/Starlink_(satellite_constellation)-Logo.wine.png"
         },
         {
             "question": "Teszt kérdés! #7",
