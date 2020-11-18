@@ -50,7 +50,7 @@ Client.on('message', async message => {
         } else {
             Player = new PlayerClass(message.author.tag)
 
-            let botReply = await message.reply(`Kattints a ✅ reakciógombra a kezdésért!!`)
+            let botReply = await message.reply(`Kattints a ✅ reakciógombra a kezdésért 😁`)
             await botReply.react("✅")
         }
     }

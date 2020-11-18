@@ -75,7 +75,6 @@ class GameClass {
             let embed = new Discord.MessageEmbed()
             let embedContent = ``
 
-            console.log(this.currentQuestion.imgURL)
             const attachment = new Discord.MessageAttachment(`images/`, this.currentQuestion.imgURL)
 
             // Set the properties of the embed message
@@ -166,7 +165,7 @@ class GameClass {
     // Switch to next question
     nextQuestion = () => {
         // DEBUG LOG
-        console.log("Next question!")
+        // console.log("Next question!")
         this.currentQuestionNumber++
         this.currentQuestion = this.questions[this.currentQuestionNumber]
         return
