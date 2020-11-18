@@ -83,7 +83,7 @@ Client.on("messageReactionAdd", async (reaction, user) => {
     // Else if the game state is stopped and the user is ready, start the game
     if (Game.status == "stopped" && reaction.emoji.name == "✅") {
         // DEBUG MESSAGE (REMOVE LATER)
-        console.log(reaction.emoji.name)
+        // console.log(reaction.emoji.name)
 
         // "await" stops the code from execeution until promise is received
         await message.channel.send("A játék elkezdődött! A következő parancsal tudsz kilépni: `.kilep`🕹")
