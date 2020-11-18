@@ -54,18 +54,22 @@ class GameClass {
     // This member function will process the question response
     handleQuestion = async (message, reaction) => {
         // If there is an incoming answer
-        // FIX: Make this not emoji-oriented!
         if (this.acceptedAnswers.includes(reaction.emoji.name)) {
+            // Check which emoji has the player clicked on and if it's correct
             if (
                 reaction.emoji.name == "0️⃣" && this.currentQuestion.correctAnswer == 0 ||
                 reaction.emoji.name == "1️⃣" && this.currentQuestion.correctAnswer == 1 ||
                 reaction.emoji.name == "2️⃣" && this.currentQuestion.correctAnswer == 2 ||
                 reaction.emoji.name == "3️⃣" && this.currentQuestion.correctAnswer == 3
             )
+                // Increase the correct answer count
                 this.player.correctAnswers += 1
-            else
-                console.log("WRONG ANSWER!")
 
+            // DEBUG MESSAGE (REMOVE LATER)
+            // else
+            //     console.log("WRONG ANSWER!")
+
+            // Go to the next question
             this.nextQuestion()
         }
 
@@ -75,10 +79,10 @@ class GameClass {
             let embed = new Discord.MessageEmbed()
             let embedContent = ``
 
+            // Add the corresponding attachment as an image to the embed message
             const attachment = new Discord.MessageAttachment(`images/`, this.currentQuestion.imgURL)
 
             // Set the properties of the embed message
-
             embedContent += `ℹ Jelenlegi pontszámod: ${this.player.correctAnswers}/${this.questionCount}\n\n`
             embedContent += `0️⃣ ${this.currentQuestion.answer0}\n`
             embedContent += `1️⃣ ${this.currentQuestion.answer1}\n`
@@ -91,6 +95,7 @@ class GameClass {
             embed.setThumbnail(`attachment://${this.currentQuestion.imgURL}`)
             // embed.setThumbnail(this.currentQuestion.imgURL)
 
+            // Send a message based on the number of answers
             if (this.currentQuestionNumber == 0) {
                 await message.channel.send("Jőjjön egy egyszerű kérdés kezdésként! 🔰");
                 embed.setColor("RED")
@@ -100,8 +105,8 @@ class GameClass {
                 await message.channel.send("Eddig jól haladsz, csak így tovább! 🤗")
             }
 
-            // Send the embed message
-            let botReply = await message.channel.send({
+            // Send the embed message with the attachment
+            await message.channel.send({
                 embed,
                 files: [{
                     attachment: `images/${this.currentQuestion.imgURL}`,
@@ -121,6 +126,7 @@ class GameClass {
 
             let level = ``
 
+            // Assign a level based on the correct answer's count
             switch (this.player.correctAnswers) {
                 case 0:
                 case 1:
@@ -146,19 +152,24 @@ class GameClass {
                     console.log("Error!")
             }
 
+            // Create a new embed
             let embed = new Discord.MessageEmbed()
             let embedContent = ``
 
+            // Set embed content
             embedContent += `ℹ Elért pontszám: ${this.player.correctAnswers}/${this.questionCount}\n`
             embedContent += `ℹ Elért szint: ${level}\n`
             embedContent += `ℹ Az új játék indításához írd be a \`.kilep\` parancsot! 🕹`
 
+            // Attaches embedContent to embed message and sets properties
             embed.setTitle(`‼ Játék vége ‼`)
             embed.setColor("GREEN")
             embed.setDescription(embedContent)
 
+            // Sends the embed message to channel
             await message.channel.send(embed)
 
+            // Restarts (resets) the game
             this.reset()
         }
     }
