@@ -77,7 +77,7 @@ Client.on("messageReactionAdd", async (reaction, user) => {
     const message = reaction.message
 
     // If the bot reacted (added a reaction to the list), skip
-    if (Client.user.tag == user.tag)
+    if (Client.user.tag == user.tag && user.tag != Player.id)
         return
 
     // Else if the game state is stopped and the user is ready, start the game

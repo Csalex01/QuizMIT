@@ -64,31 +64,31 @@
             "imgURL": "https://download.logo.wine/logo/Starlink_(satellite_constellation)/Starlink_(satellite_constellation)-Logo.wine.png"
         },
         {
-            "question": "Teszt kérdés! #7",
-            "answer0": "Teszt válasz 1#7",
-            "answer1": "Teszt válasz 2#7",
-            "answer2": "Teszt válasz 3#7",
-            "answer3": "Teszt válasz 4#7",
-            "correctAnswer": 0,
-            "imgURL": ""
+            "question": "Mikor ütközött a Jupiterrel a Shoemaker-Levy 9 üstökös ❓",
+            "answer0": "2012 ⭐",
+            "answer1": "2019 📅",
+            "answer2": "1994 ☄",
+            "answer3": "1999 🌌",
+            "correctAnswer": 2,
+            "imgURL": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Max_Planck_Institute_Shoemaker%E2%80%93Levy_9.gif"
         },
         {
-            "question": "Teszt kérdés! #8",
-            "answer0": "Teszt válasz 1#8",
-            "answer1": "Teszt válasz 2#8",
-            "answer2": "Teszt válasz 3#8",
-            "answer3": "Teszt válasz 4#8",
-            "correctAnswer": 0,
-            "imgURL": ""
+            "question": "A naprendszerünk bolygói közül, melyik bolygón találhatóak a legnagyobb porviharok ❓",
+            "answer0": "Merkúr 🧬",
+            "answer1": "Föld 🌍",
+            "answer2": "Jupiter ☁",
+            "answer3": "Mars 👽",
+            "correctAnswer": 3,
+            "imgURL": "https://solarsystem.nasa.gov/system/feature_items/images/594_planets3x3_pluto_colorMercury_axis_tilt_NOLABELS_1080p.00001_print.jpg"
         },
         {
-            "question": "Teszt kérdés! #9",
-            "answer0": "Teszt válasz 1#9",
-            "answer1": "Teszt válasz 2#9",
-            "answer2": "Teszt válasz 3#9",
-            "answer3": "Teszt válasz 4#9",
-            "correctAnswer": 0,
-            "imgURL": ""
+            "question": "A Naprendszer 6. bolygója atmoszférájában melyik anyag található a legnagyobb koncentrációban ❓",
+            "answer0": "Oxigén 🌊",
+            "answer1": "Hidrogén 🌊",
+            "answer2": "Foszfor 🔥",
+            "answer3": "Nitrogén 🥶",
+            "correctAnswer": 1,
+            "imgURL": "https://sciencenotes.org/wp-content/uploads/2017/02/KidsPeriodicTable2017.png"
         }
     ]
 }

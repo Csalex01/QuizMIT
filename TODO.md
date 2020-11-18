@@ -2,11 +2,11 @@
 (Priority order)
 
 - Expand the question list (max 10)
-    - Done: 5 questions
+    - Done: 10 questions
 
 - Questions
-    - Expand list to 10 (Done: 5)
-    - Add images (Done: 5)
+    - Expand list to 10 (Done: 10)
+    - Add images (Done: 10)
 
 - Update Game.questionCount based on the entries from questions.json (DONE)
     - DONE
@@ -27,5 +27,7 @@
     - Alternative: Run bot on Raspberry Pi
 
 - Create a short video on the project (possibly narrated)
+
+- DOCUMENTATION!!!!
 
 - Submit the project

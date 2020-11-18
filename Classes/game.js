@@ -45,7 +45,7 @@ class GameClass {
 
         // Set the current question to the first question in the stack
         this.currentQuestion = this.questions[this.currentQuestionNumber]
-        console.log(this.currentQuestion)
+        // console.log(this.currentQuestion)
 
         // DEBUG MESSAGE (REMOVE LATER)
         console.log(`PlayerID: ${this.player.id}`);
@@ -88,6 +88,7 @@ class GameClass {
 
             if (this.currentQuestionNumber == 0) {
                 await message.channel.send("Jőjjön egy egyszerű kérdés kezdésként! 🔰");
+                embed.setColor("RED")
             } else if (this.currentQuestionNumber == 1) {
                 await message.channel.send("Bemelegítés vége. Kezdődnek a általános kérdések az űrkutatással kapcsolatban! 👽")
             } else if (this.currentQuestionNumber % 3 == 0) {
@@ -104,8 +105,49 @@ class GameClass {
         } else {
             // If the game is over
             // DEBUG MESSAGE (REMOVE LATER)
-            console.log("GAME OVER")
-            message.channel.send(`JÁTÉK VÉGE\nElért pontszám: ${this.player.correctAnswers}/${this.questionCount}`)
+            // console.log("GAME OVER")
+            // message.channel.send(`JÁTÉK VÉGE\nElért pontszám: ${this.player.correctAnswers}/${this.questionCount}`)
+
+            let level = ``
+
+            switch (this.player.correctAnswers) {
+                case 0:
+                case 1:
+                    level = "Elégségtelen 😥"
+                    break;
+                case 2:
+                case 3:
+                case 4:
+                    level = "Elégséges 😣"
+                    break;
+                case 5:
+                case 6:
+                    level = "Jó 🙂"
+                    break;
+                case 7:
+                case 8:
+                    level = "Szinte tökéletes 😀"
+                    break;
+                case 9:
+                    level = "Tökéletes 😁😁"
+                    break;
+                default:
+                    console.log("Error!")
+            }
+
+            let embed = new Discord.MessageEmbed()
+            let embedContent = ``
+
+            embedContent += `ℹ Elért pontszám: ${this.player.correctAnswers}/${this.questionCount}\n`
+            embedContent += `ℹ Elért szint: ${level}\n`
+            embedContent += `ℹ Az új játék indításához írd be a \`.kilep\` parancsot!\n ✔`
+
+            embed.setTitle(`‼ Játék vége ‼`)
+            embed.setColor("GREEN")
+            embed.setDescription(embedContent)
+
+            await message.channel.send(embed)
+
             this.reset()
         }
     }
