@@ -105,7 +105,7 @@ class GameClass {
             // If the game is over
             // DEBUG MESSAGE (REMOVE LATER)
             console.log("GAME OVER")
-            message.channel.send(`JÁTÉK VÉGE\nElért pontszám: ${this.player.correctAnswers}\\${this.questionCount}`)
+            message.channel.send(`JÁTÉK VÉGE\nElért pontszám: ${this.player.correctAnswers}/${this.questionCount}`)
             this.reset()
         }
     }
