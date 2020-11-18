@@ -20,7 +20,7 @@ const validate = (message, commands) => {
             // Which command has been executed
             console.log(`Current command: ${PREFIX}${cmd}`)
             // The current timestamp
-            console.log(`Timestamp: ${Date.now()}`)
+            console.log(`Timestamp: ${Date.now().toDateString()}`)
             console.log("-----")
 
             // Return true, successful validation
