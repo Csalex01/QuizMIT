@@ -14,7 +14,6 @@ const validate = (message, commands) => {
         // If cmd fits the template, then
         if (message.content.toLowerCase().startsWith(`${PREFIX}${cmd} `) || message.content === `${PREFIX}${cmd}`) {
             // Log these
-            console.log("-----")
 
             // Message author (command sender)
             console.log(`Executed by ${message.author.tag}`)
