@@ -14,13 +14,15 @@ const validate = (message, commands) => {
         // If cmd fits the template, then
         if (message.content.toLowerCase().startsWith(`${PREFIX}${cmd} `) || message.content === `${PREFIX}${cmd}`) {
             // Log these
+            const currDate = Date.now()
+            const timestamp = new Date(currDate).toDateString()
 
             // Message author (command sender)
             console.log(`Executed by ${message.author.tag}`)
             // Which command has been executed
             console.log(`Current command: ${PREFIX}${cmd}`)
             // The current timestamp
-            console.log(`Timestamp: ${Date.now()}`)
+            console.log(`Timestamp: ${timestamp}`)
             console.log("-----")
 
             // Return true, successful validation
