@@ -15,19 +15,18 @@
 
 - Add assist feature
 
-- Update README.md
+- Update README.md (DOCUMENTATION!!!)
     - Introduction to the project
     - Usage
     - How to install
     - How to add bot to server
     
 - Stylistic changes
+    - DONE
 
 - Deploy bot to cloud (Preferred: Heroku/AWS)
     - DONE (Hosted on Heroku)
 
 - Create a short video on the project (possibly narrated)
-
-- DOCUMENTATION!!!!
 
 - Submit the project

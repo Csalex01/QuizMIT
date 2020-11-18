@@ -41,37 +41,48 @@ Client.on('message', async message => {
     if (validate(message, "ping"))
         ping(message);
 
+    // Help functionality
+    // Valid inputs: .help, .segitseg, .segits
     else if (validate(message, ["help", "segitseg", "segits"])) {
         let embed = new Discord.MessageEmbed()
         let embedContent = ``
 
+        // Add content for the embed message
         embedContent += `**A következő parancsok állnak rendelkezésre:\n**`
         embedContent += `🏁 A játék indításához: \`.start\`, \`.kezd\`, \`.kezdes\`\n`
         embedContent += `⛳ A játék befejezéséhez: \`.stop\`, \`.kilep\`\n`
         embedContent += `🤔 A bot jelenlétének ellenőrzéséért: \`.ping\`\n`
         embedContent += `❓ Segítségkérésért: \`.help\`, \`.segitseg\`, \`.segits\``
 
+        // Set properties
         embed.setTitle(`🚨 Segítség 🚨`)
         embed.setColor("BLUE")
         embed.setDescription(embedContent)
 
+        // Send to channel
         await message.channel.send(embed)
     }
 
     // Starts the game
     // Valid inputs: .kezd, .kezdes
     else if (validate(message, ["kezdes", "kezd", "start"])) {
+        // If the game is running
         if (Game.status == "running") {
+            // Then you cannot start the game
             message.channel.send("❌ A játék már fut!")
             return
         } else {
+            // Create a new player
             Player = new PlayerClass(message.author.tag)
 
+            // Send feedback
             let botReply = await message.reply(`Kattints a ✅ reakciógombra a kezdésért 😁`)
             await botReply.react("✅")
         }
     }
 
+    // Exits the game
+    // Valid inputs: .kilep, .stop
     else if (validate(message, ["kilep", "stop"])) {
         // If the game is running
         if (Game.status == "running") {
@@ -110,8 +121,6 @@ Client.on("messageReactionAdd", async (reaction, user) => {
 
         // Player is a pointer to Game.player
         Player = Game.player
-
-
     }
 
     // Handle the response and disply next question
