@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "run": "nodemon bot.js"
+    "start": "nodemon bot.js"
   },
   "author": "Csillag Alex @SapientiaEMTE",
   "license": "MIT"
