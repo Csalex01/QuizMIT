@@ -140,7 +140,7 @@ class GameClass {
 
             embedContent += `ℹ Elért pontszám: ${this.player.correctAnswers}/${this.questionCount}\n`
             embedContent += `ℹ Elért szint: ${level}\n`
-            embedContent += `ℹ Az új játék indításához írd be a \`.kilep\` parancsot!\n ✔`
+            embedContent += `ℹ Az új játék indításához írd be a \`.kilep\` parancsot! 🕹`
 
             embed.setTitle(`‼ Játék vége ‼`)
             embed.setColor("GREEN")

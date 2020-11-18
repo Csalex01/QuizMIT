@@ -24,7 +24,7 @@
 - Stylistic changes
 
 - Deploy bot to cloud (Preferred: Heroku/AWS)
-    - Alternative: Run bot on Raspberry Pi
+    - DONE (Hosted on Glitch.com)
 
 - Create a short video on the project (possibly narrated)
 
