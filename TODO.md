@@ -24,7 +24,7 @@
 - Stylistic changes
 
 - Deploy bot to cloud (Preferred: Heroku/AWS)
-    - DONE (Hosted on Glitch.com)
+    - DONE (Hosted on Heroku)
 
 - Create a short video on the project (possibly narrated)
 
