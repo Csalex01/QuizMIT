@@ -8,6 +8,9 @@
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.6"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "devDependencies": {},
   "scripts": {
     "run": "nodemon bot.js"
