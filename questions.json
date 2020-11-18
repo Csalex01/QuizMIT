@@ -7,7 +7,7 @@
             "answer2": "Tizenkettő",
             "answer3": "Tizenhárom",
             "correctAnswer": 3,
-            "imgURL": "https://yt3.ggpht.com/a/AATXAJz8RwwKeDgdWJ8KffVZE6gmq1irh97lK7-mUDE6=s900-c-k-c0x00ffffff-no-rj"
+            "imgURL": "sapi.jpg"
         },
         {
             "question": "Mit rövidít a NASA❓",
@@ -16,7 +16,7 @@
             "answer2": "National Association of Space Administration 🌟",
             "answer3": "National Alien Society Administration 🛸",
             "correctAnswer": 0,
-            "imgURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/918px-NASA_logo.svg.png"
+            "imgURL": "nasa.png"
         },
         {
             "question": "Ki Elon Reeve Musk ❓",
@@ -25,7 +25,7 @@
             "answer2": "Angol tanár a Sapientián 🎓",
             "answer3": "REEEEEEEEEEEEEEE 📢",
             "correctAnswer": 1,
-            "imgURL": "https://d3g9pb5nvr3u7.cloudfront.net/authors/539a28913f3c0fd71ed4e43d/2131300937/256.jpg"
+            "imgURL": "elon_musk.jpg"
         },
         {
             "question": "Mikor tette közzé az Event Horizon Telescope az első képet a Messier 87 galaxis belsejében található fekete lyukról ❓",
@@ -34,7 +34,7 @@
             "answer2": "2020 Április 5 🎇",
             "answer3": "2017 Április 1 ☄",
             "correctAnswer": 0,
-            "imgURL": "https://www.nasa.gov/sites/default/files/thumbnails/image/blackhole.png"
+            "imgURL": "black_hole.png"
         },
         {
             "question": "Miért alapult meg a SpaceX cég ❓",
@@ -43,7 +43,7 @@
             "answer2": "Versengés a NASA-val 🏁",
             "answer3": "Az Űrverseny megnyerése 🚀",
             "correctAnswer": 1,
-            "imgURL": "https://www.itvoice.in/wp-content/uploads/2020/06/spacex-361.jpg"
+            "imgURL": "spacex.jpg"
         },
         {
             "question": "A NASA és SpaceX hány hónapos küldetésre jelölte ki a Crew-1 legénységet ❓",
@@ -52,7 +52,7 @@
             "answer2": "6 hónap 🕕",
             "answer3": "5 hónap 🕔",
             "correctAnswer": 2,
-            "imgURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/SpaceX_Crew-1_logo.svg/175px-SpaceX_Crew-1_logo.svg.png"
+            "imgURL": "crew_1.png"
         },
         {
             "question": "A SpaceX Starlink műholdjainak mekkora a tömege ❓",
@@ -61,7 +61,7 @@
             "answer2": "420kg 🚬",
             "answer3": "69kg  👌",
             "correctAnswer": 0,
-            "imgURL": "https://download.logo.wine/logo/Starlink_(satellite_constellation)/Starlink_(satellite_constellation)-Logo.wine.png"
+            "imgURL": "starlink.png"
         },
         {
             "question": "Mikor ütközött a Jupiterrel a Shoemaker-Levy 9 üstökös ❓",
@@ -70,7 +70,7 @@
             "answer2": "1994 ☄",
             "answer3": "1999 🌌",
             "correctAnswer": 2,
-            "imgURL": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Max_Planck_Institute_Shoemaker%E2%80%93Levy_9.gif"
+            "imgURL": "shoemaker_levy.gif"
         },
         {
             "question": "A naprendszerünk bolygói közül, melyik bolygón találhatóak a legnagyobb porviharok ❓",
@@ -79,7 +79,7 @@
             "answer2": "Jupiter ☁",
             "answer3": "Mars 👽",
             "correctAnswer": 3,
-            "imgURL": "https://solarsystem.nasa.gov/system/feature_items/images/594_planets3x3_pluto_colorMercury_axis_tilt_NOLABELS_1080p.00001_print.jpg"
+            "imgURL": "solar_system.jpg"
         },
         {
             "question": "A Naprendszer 6. bolygója atmoszférájában melyik anyag található a legnagyobb koncentrációban ❓",
@@ -88,7 +88,7 @@
             "answer2": "Foszfor 🔥",
             "answer3": "Nitrogén 🥶",
             "correctAnswer": 1,
-            "imgURL": "https://sciencenotes.org/wp-content/uploads/2017/02/KidsPeriodicTable2017.png"
+            "imgURL": "periodic_table.png"
         }
     ]
 }

@@ -75,6 +75,9 @@ class GameClass {
             let embed = new Discord.MessageEmbed()
             let embedContent = ``
 
+            console.log(this.currentQuestion.imgURL)
+            const attachment = new Discord.MessageAttachment(`images/`, this.currentQuestion.imgURL)
+
             // Set the properties of the embed message
             embed.setTitle(`${this.currentQuestionNumber}. ${this.currentQuestion.question}`)
             embedContent += `ℹ Jelenlegi pontszámod: ${this.player.correctAnswers}/${this.questionCount}\n\n`
@@ -84,7 +87,9 @@ class GameClass {
             embedContent += `3️⃣ ${this.currentQuestion.answer3}\n`
             embed.setColor("GREEN")
             embed.setDescription(embedContent)
-            embed.setThumbnail(this.currentQuestion.imgURL)
+            // embed.attachFiles(attachment)
+            embed.setThumbnail(`attachment://${this.currentQuestion.imgURL}`)
+            // embed.setThumbnail(this.currentQuestion.imgURL)
 
             if (this.currentQuestionNumber == 0) {
                 await message.channel.send("Jőjjön egy egyszerű kérdés kezdésként! 🔰");
@@ -96,7 +101,13 @@ class GameClass {
             }
 
             // Send the embed message
-            let botReply = await message.channel.send(embed)
+            let botReply = await message.channel.send({
+                embed,
+                files: [{
+                    attachment: `images/${this.currentQuestion.imgURL}`,
+                    name: this.currentQuestion.imgURL
+                }]
+            })
 
             // Add reactions to the embed message
             for (let reaction of this.acceptedAnswers)
