@@ -41,6 +41,23 @@ Client.on('message', async message => {
     if (validate(message, "ping"))
         ping(message);
 
+    else if (validate(message, ["help", "segitseg", "segits"])) {
+        let embed = new Discord.MessageEmbed()
+        let embedContent = ``
+
+        embedContent += `**A következő parancsok állnak rendelkezésre:\n**`
+        embedContent += `🏁 A játék indításához: \`.start\`, \`.kezd\`, \`.kezdes\`\n`
+        embedContent += `⛳ A játék befejezéséhez: \`.stop\`, \`.kilep\`\n`
+        embedContent += `🤔 A bot jelenlétének ellenőrzéséért: \`.ping\`\n`
+        embedContent += `❓ Segítségkérésért: \`.help\`, \`.segitseg\`, \`.segits\``
+
+        embed.setTitle(`🚨 Segítség 🚨`)
+        embed.setColor("BLUE")
+        embed.setDescription(embedContent)
+
+        await message.channel.send(embed)
+    }
+
     // Starts the game
     // Valid inputs: .kezd, .kezdes
     else if (validate(message, ["kezdes", "kezd", "start"])) {

@@ -78,12 +78,13 @@ class GameClass {
             const attachment = new Discord.MessageAttachment(`images/`, this.currentQuestion.imgURL)
 
             // Set the properties of the embed message
-            embed.setTitle(`${this.currentQuestionNumber}. ${this.currentQuestion.question}`)
+
             embedContent += `ℹ Jelenlegi pontszámod: ${this.player.correctAnswers}/${this.questionCount}\n\n`
             embedContent += `0️⃣ ${this.currentQuestion.answer0}\n`
             embedContent += `1️⃣ ${this.currentQuestion.answer1}\n`
             embedContent += `2️⃣ ${this.currentQuestion.answer2}\n`
             embedContent += `3️⃣ ${this.currentQuestion.answer3}\n`
+            embed.setTitle(`${this.currentQuestionNumber}. ${this.currentQuestion.question}`)
             embed.setColor("GREEN")
             embed.setDescription(embedContent)
             // embed.attachFiles(attachment)
