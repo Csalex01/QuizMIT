@@ -2,8 +2,8 @@
 const PREFIX = process.env.PREFIX
 
 // Test command
-const ping = (message) => {
-    message.reply("🏓 Pong!")
+const ping = async (message) => {
+    await message.reply("🏓 Pong!")
 }
 
 // Command validation

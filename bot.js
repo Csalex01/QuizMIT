@@ -39,7 +39,7 @@ Client.on('ready', () => {
 Client.on('message', async message => {
     // Test command
     if (validate(message, "ping"))
-        ping(message);
+        await ping(message);
 
     // Help functionality
     // Valid inputs: .help, .segitseg, .segits
