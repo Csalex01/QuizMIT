@@ -38,7 +38,7 @@ Client.on('ready', () => {
 // On message
 Client.on('message', async message => {
     // Test command
-    if (validate(message, "ping"))
+    if (validate(message, ["ping"]))
         await ping(message);
 
     // Help functionality
