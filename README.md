@@ -5,7 +5,11 @@ A projekt témája: Kvíz játék
 
 
 ## 🔰 Bevezetés
-Téma: űr és űrkutatás
+A játék egy Discord bot formájában van megvalósítva, így könnyű kezelhetőséget biztosít a felhasználónak/játékosnak.
+
+A játék témája: minden ami űr és űrkutatás. Nagy inspirációforrás a NASA és a SpaceX közti együttműködés és az elért teljesítményeik, mint például a napokban lezajlott Crew-1 6 hónapos küldetésnek a kezdete. Egy másik inspirációforrás a történelemből származott, mint például az 1994-es Shoemaker-Levy üstökös ütküzése a Jupiterrel, amely becsapódás előtt felbomlott.
+
+Jelenleg csak 10 kérdés áll rendelkezésre, viszont a kérdések száma nagyon könnyen bővíthető ha forráskódban található `questions.json` fájl segítségével.
 
 
 ### 🧾 Használati útmutató
