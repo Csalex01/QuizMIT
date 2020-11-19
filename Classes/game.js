@@ -125,10 +125,10 @@ class GameClass {
             // message.channel.send(`JÁTÉK VÉGE\nElért pontszám: ${this.player.correctAnswers}/${this.questionCount}`)
 
             let level = ``
+            let correctAnswers = this.player.correctAnswers
 
             // Assign a level based on the correct answer's count
             switch (this.player.correctAnswers) {
-                case 0:
                 case 1:
                     level = "Elégségtelen 😥"
                     break;
@@ -150,6 +150,20 @@ class GameClass {
                     break;
                 default:
                     console.log("Error!")
+            }
+
+            if (correctAnswers == 0) {
+                level = "Nagyon rossz 😥"
+            } else if (correctAnswers == 1) {
+                level = "Elégségtelen 😣"
+            } else if (correctAnswers >= 2 && correctAnswers <= 4) {
+                level = "Elégséges 😐"
+            } else if (correctAnswers == 5 || correctAnswers == 6) {
+                level = "Jó 🙂"
+            } else if (correctAnswers == 7 || correctAnswers == 8) {
+                level = "Szinte tökéletes 😀"
+            } else {
+                level = "Tökéletes 😁"
             }
 
             // Create a new embed

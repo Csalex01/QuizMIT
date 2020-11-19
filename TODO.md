@@ -13,6 +13,7 @@
 
 - Improve logic
     - FIX ranking system (replace switch statements)
+        - DONE
 
 - Add assist feature
 
