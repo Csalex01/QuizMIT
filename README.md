@@ -1,7 +1,6 @@
 # QuizMIT ❓
 
 Ez a projekt a Sapientia EMTE Informatika kara által szervezett Hall of Fame novemberi rendezvényre készült.
-
 A projekt témája: Kvíz játék
 
 
