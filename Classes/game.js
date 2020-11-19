@@ -106,7 +106,7 @@ class GameClass {
             }
 
             // Send the embed message with the attachment
-            await message.channel.send({
+            let botReply = await message.channel.send({
                 embed,
                 files: [{
                     attachment: `images/${this.currentQuestion.imgURL}`,
