@@ -173,7 +173,7 @@ class GameClass {
             // Set embed content
             embedContent += `ℹ Elért pontszám: ${this.player.correctAnswers}/${this.questionCount}\n`
             embedContent += `ℹ Elért szint: ${level}\n`
-            embedContent += `ℹ Az új játék indításához írd be a \`.kilep\` parancsot! 🕹`
+            embedContent += `ℹ Az új játék indításához írd be a \`.start\` parancsot! 🕹`
 
             // Attaches embedContent to embed message and sets properties
             embed.setTitle(`‼ Játék vége ‼`)
