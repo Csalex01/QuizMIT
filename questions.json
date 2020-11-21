@@ -23,12 +23,12 @@
             "answer0": "Egy muskétás 🔫",
             "answer1": "SpaceX, Tesla, PayPal és egyéb cégek fővezetője 🚀",
             "answer2": "Angol tanár a Sapientián 🎓",
-            "answer3": "REEEEEEEEEEEEEEE 📢",
+            "answer3": "Csillagász 🔭",
             "correctAnswer": 1,
             "imgURL": "elon_musk.jpg"
         },
         {
-            "question": "Mikor tette közzé az Event Horizon Telescope az első képet a Messier 87 galaxis belsejében található fekete lyukról ❓",
+            "question": "Mikor publikálta az Event Horizon Telescope az első képet a Messier 87 galaxis középpontjában található fekete lyukról ❓",
             "answer0": "2019 Április 10 🌟",
             "answer1": "2019 Május 10 🌌",
             "answer2": "2020 Április 5 🎇",
@@ -37,7 +37,7 @@
             "imgURL": "black_hole.png"
         },
         {
-            "question": "Miért alapult meg a SpaceX cég ❓",
+            "question": "Mi volt a SpaceX megalapításának célja ❓",
             "answer0": "Elon Musk egyik álma volt 💤",
             "answer1": "A NASA költségvetését szerette volna megnövelni 💲",
             "answer2": "Versengés a NASA-val 🏁",
@@ -46,7 +46,7 @@
             "imgURL": "spacex.jpg"
         },
         {
-            "question": "A NASA és SpaceX hány hónapos küldetésre jelölte ki a Crew-1 legénységet ❓",
+            "question": "Hány hónapos küldetésre jelölte ki a Crew-1 legénységet a NASA/SpaceX ❓",
             "answer0": "2 hónap 🕑",
             "answer1": "4 hónap 🕓",
             "answer2": "6 hónap 🕕",
@@ -55,7 +55,7 @@
             "imgURL": "crew_1.png"
         },
         {
-            "question": "A SpaceX Starlink műholdjainak mekkora a tömege ❓",
+            "question": "A SpaceX által felbocsátott Starlink műholdoknak mekkora a tömege ❓",
             "answer0": "260kg 🤔",
             "answer1": "320kg 👽",
             "answer2": "420kg 🚬",
@@ -64,7 +64,7 @@
             "imgURL": "starlink.png"
         },
         {
-            "question": "Mikor ütközött a Jupiterrel a Shoemaker-Levy 9 üstökös ❓",
+            "question": "Melyik évben ütközött a Jupiterrel a Shoemaker-Levy 9 üstökös ❓",
             "answer0": "2012 ⭐",
             "answer1": "2019 📅",
             "answer2": "1994 ☄",
@@ -73,7 +73,7 @@
             "imgURL": "shoemaker_levy.gif"
         },
         {
-            "question": "A naprendszerünk bolygói közül, melyik bolygón találhatóak a legnagyobb porviharok ❓",
+            "question": "A naprendszerünk bolygói közül, melyik bolygón tombolnak a legnagyobb porviharok ❓",
             "answer0": "Merkúr 🧬",
             "answer1": "Föld 🌍",
             "answer2": "Jupiter ☁",
@@ -82,7 +82,7 @@
             "imgURL": "solar_system.jpg"
         },
         {
-            "question": "A Naprendszer 6. bolygója atmoszférájában melyik anyag található a legnagyobb koncentrációban ❓",
+            "question": "A naprendszerünk 6. bolygója atomszférájában a felsoroltak közül melyik anyag található a legnagyobb koncentrációban ❓",
             "answer0": "Oxigén 🌊",
             "answer1": "Hidrogén 🌊",
             "answer2": "Foszfor 🔥",
