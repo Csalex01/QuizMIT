@@ -29,6 +29,7 @@
 - Deploy bot to cloud (Preferred: Heroku/AWS)
     - DONE (Hosted on Heroku)
 
-- Create a short video on the project (possibly narrated)
+- Create a short video on the project
+    - DONE
 
 - Submit the project

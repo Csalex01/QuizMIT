@@ -1,3 +1,5 @@
+![Logó](logo.png)
+
 # QuizMIT ❓
 
 Ez a projekt a Sapientia EMTE Informatika kara által szervezett Hall of Fame novemberi rendezvényre készült.
@@ -32,6 +34,15 @@ Ezt a játék bármely pontjában megteheted!
 1. Minden egyes kérdés alatt megjelenik négy féle válaszlehetőség egy emoji reakció formájában (0️⃣, 1️⃣, 2️⃣ vagy 3️⃣)
 2. Ha válaszolni szeretnél, akkor csak annyi teendőd van, hogy a megadott válaszlehetőségnek megfelelő emojira kattintasz.
 3. Ha helyes választ adtál meg, akkor az elért pontszámod növekszik 1-el, különben pedig változatlan marad.
+
+### 🎮 Hogyan tudom kipróbálni?
+Nincs egyéb dolgod, csak [ide](https://discord.com/api/oauth2/authorize?client_id=775050170969882624&permissions=34880&scope=bot) kattintani! A linknek a segítségével meg tudod hívni a botot saját Discord szerveredre!
+
+A következő jogosultságok szükségesek:
+
+1. Üzenet küldése
+2. Fájlok csatolása (így tölti be az embed üzenetek indexképét)
+3. Reakció üzenethez adása
 
 
 ## 🔬 Használt eszközök
