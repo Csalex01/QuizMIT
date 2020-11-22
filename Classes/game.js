@@ -128,30 +128,6 @@ class GameClass {
             let correctAnswers = this.player.correctAnswers
 
             // Assign a level based on the correct answer's count
-            switch (this.player.correctAnswers) {
-                case 1:
-                    level = "Elégségtelen 😥"
-                    break;
-                case 2:
-                case 3:
-                case 4:
-                    level = "Elégséges 😣"
-                    break;
-                case 5:
-                case 6:
-                    level = "Jó 🙂"
-                    break;
-                case 7:
-                case 8:
-                    level = "Szinte tökéletes 😀"
-                    break;
-                case 9:
-                    level = "Tökéletes 😁😁"
-                    break;
-                default:
-                    console.log("Error!")
-            }
-
             if (correctAnswers == 0) {
                 level = "Nagyon rossz 😥"
             } else if (correctAnswers == 1) {
@@ -173,7 +149,8 @@ class GameClass {
             // Set embed content
             embedContent += `ℹ Elért pontszám: ${this.player.correctAnswers}/${this.questionCount}\n`
             embedContent += `ℹ Elért szint: ${level}\n`
-            embedContent += `ℹ Az új játék indításához írd be a \`.start\` parancsot! 🕹`
+            embedContent += `ℹ Az új játék indításához írd be a \`.start\`, \`.kezd\`, \`.kedes\` parancsok egyikét! 🕹`
+            embedContent += `ℹ További segítségért írd be a \`.help\`, \`.segitseg\`, \`.segit\` parancsok egyikét! ❓`
 
             // Attaches embedContent to embed message and sets properties
             embed.setTitle(`‼ Játék vége ‼`)
